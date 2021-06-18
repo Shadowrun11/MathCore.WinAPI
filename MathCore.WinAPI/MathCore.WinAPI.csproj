@@ -1,9 +1,23 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
-    <SignAssembly>true</SignAssembly>
-    <AssemblyOriginatorKeyFile>MathCore.WinAPI.snk</AssemblyOriginatorKeyFile>
-  </PropertyGroup>
+	<PropertyGroup>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<SignAssembly>true</SignAssembly>
+		<AssemblyOriginatorKeyFile>MathCore.WinAPI.snk</AssemblyOriginatorKeyFile>
+		<PackageLicenseExpression>MIT</PackageLicenseExpression>
+		<Version>0.0.1</Version>
+		<Description>Библиотека для доступа к API-функциям Windows</Description>
+		<TargetFramework>netcoreapp3.1</TargetFramework>
+		<SignAssembly>true</SignAssembly>
+		<AssemblyOriginatorKeyFile>MathCore.WinAPI.snk</AssemblyOriginatorKeyFile>
+	</PropertyGroup>
+
+	<PropertyGroup>
+		<Version>0.0.1</Version>
+	</PropertyGroup>
+
+	<PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+		<DocumentationFile>MathCore.WinAPI.xml</DocumentationFile>
+	</PropertyGroup>
 
 </Project>
